@@ -51,9 +51,6 @@ call plug#end()
 
 colorscheme everforest
 
-autocmd BufReadPost,BufNewFile * :TSEnable highlight
-
-
 " === Status Line ===
 function! GitBranch()
 let l:branch = system('git rev-parse --abbrev-ref HEAD 2>/dev/null')
